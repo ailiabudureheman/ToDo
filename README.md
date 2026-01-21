@@ -93,8 +93,8 @@ TODO/
 
 ## 手机下载
 
-1.目前只适配安卓手机，安卓用户可以下载项目的app/build/outputs/apk/release/app-release-unsigned.apk，然后在手机中安装。
-2.如果上面apk下载失败，可以试试：app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+- 1.目前只适配安卓手机，安卓用户可以下载项目的app/build/outputs/apk/release/app-release-unsigned.apk，然后在手机中安装。
+- 2.如果上面apk下载失败，可以试试：app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
 
 ## 使用指南
 
