@@ -90,9 +90,11 @@ TODO/
    - 连接Android设备或启动模拟器
    - 点击"Run" > "Run 'app'"
    - 选择目标设备并点击"OK"
-##手机用户
+
+## 手机下载
+
 1.目前只适配安卓手机，安卓用户可以下载项目的app/build/outputs/apk/release/app-release-unsigned.apk，然后在手机中安装。
-2.如果上面apk下载失败，可以试试：
+2.如果上面apk下载失败，可以试试：app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
 
 ## 使用指南
 
