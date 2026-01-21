@@ -184,9 +184,9 @@ TODO/
 
 ## 联系方式
 
-- 项目链接：https://github.com/yourusername/todo-app
-- 作者：Your Name
-- 邮箱：your.email@example.com
+- 项目链接：[https://github.com/yourusername/todo-app](https://github.com/ailiabudureheman/ToDo)
+- 作者：艾力
+- 邮箱：3368006636@qq.com
 
 ## 致谢
 
