@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色调 -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    
+    <!-- 辅助色 -->
+    <color name="pink_500">#FF4081</color>
+    <color name="pink_700">#C2185B</color>
+    
+    <!-- 背景色 -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    
+    <!-- 文字颜色 -->
+    <color name="on_background">#212121</color>
+    <color name="on_surface">#212121</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    
+    <!-- 错误颜色 -->
+    <color name="error">#B00020</color>
+    <color name="on_error">#FFFFFF</color>
+    
+    <!-- 其他颜色 -->
+    <color name="gray_light">#E0E0E0</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="gray_dark">#616161</color>
+</resources>

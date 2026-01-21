@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="27.1.6">
+  <diagram name="Page-1" id="5f0bae14-7c28-e335-631c-24af17079c00">
+    <mxGraphModel dx="1205" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="39150e848f15840c-1" value="业务层" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="140" y="240" width="750" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="39150e848f15840c-4" value="TaskItem" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="170" y="290" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-2" value="UI" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="150" y="50" width="730" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-3" value="待办界面" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="190" y="105" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-5" value="已完成界面" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="105" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-6" value="废纸桶" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="530" y="105" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-7" value="统计页面" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="700" y="105" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-8" value="TaskDialog" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470" y="290" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-9" value="DateTimePicker" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="730" y="290" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-11" value="TaskRepository" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="380" width="450" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-12" value="数据层" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="140" y="490" width="750" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-13" value="TaskDao" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="170" y="535" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-14" value="TaskDatabase" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470" y="535" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-15" value="LocalDateTimeConverter" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="680" y="535" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-16" value="存储层" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="140" y="640" width="750" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yHFKPj4HPsjgb2odK4EA-17" value="Room Database&amp;nbsp;&amp;nbsp;" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="690" width="450" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.5.0" type="incidents">
+
+    <incident
+        id="RedundantLabel"
+        severity="warning"
+        message="Redundant label can be removed">
+        <fix-attribute
+            description="Delete label"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="label"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="18"
+            column="13"
+            startOffset="684"
+            endLine="18"
+            endColumn="45"
+            endOffset="716"/>
+    </incident>
+
+    <incident
+        id="RedundantNamespace"
+        severity="warning"
+        message="This namespace declaration is redundant">
+        <fix-attribute
+            description="Delete namespace"
+            attribute="xmlns:android"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher.xml"
+            line="4"
+            column="17"
+            startOffset="164"
+            endLine="4"
+            endColumn="75"
+            endOffset="222"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive icon is missing a monochrome tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher.xml"
+            line="1"
+            column="1"
+            startOffset="0"
+            endLine="20"
+            endColumn="17"
+            endOffset="849"/>
+    </incident>
+
+    <incident
+        id="RedundantNamespace"
+        severity="warning"
+        message="This namespace declaration is redundant">
+        <fix-attribute
+            description="Delete namespace"
+            attribute="xmlns:android"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="4"
+            column="17"
+            startOffset="164"
+            endLine="4"
+            endColumn="75"
+            endOffset="222"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive roundIcon is missing a monochrome tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="1"
+            column="1"
+            startOffset="0"
+            endLine="20"
+            endColumn="17"
+            endOffset="849"/>
+    </incident>
+
+    <incident
+        id="AutoboxingStateCreation"
+        severity="informational"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`">
+        <fix-replace
+            description="Replace with mutableIntStateOf"
+            replacement="androidx.compose.runtime.mutableIntStateOf"
+            shortenNames="true"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+                startOffset="3534"
+                endOffset="3548"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="100"
+            column="36"
+            startOffset="3534"
+            endLine="100"
+            endColumn="50"
+            endOffset="3548"/>
+    </incident>
+
+    <incident
+        id="AutoboxingStateCreation"
+        severity="informational"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`">
+        <fix-replace
+            description="Replace with mutableIntStateOf"
+            replacement="androidx.compose.runtime.mutableIntStateOf"
+            shortenNames="true"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+                startOffset="3600"
+                endOffset="3614"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="101"
+            column="37"
+            startOffset="3600"
+            endLine="101"
+            endColumn="51"
+            endOffset="3614"/>
+    </incident>
+
+    <incident
+        id="AutoboxingStateCreation"
+        severity="informational"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`">
+        <fix-replace
+            description="Replace with mutableIntStateOf"
+            replacement="androidx.compose.runtime.mutableIntStateOf"
+            shortenNames="true"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+                startOffset="3665"
+                endOffset="3679"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="102"
+            column="35"
+            startOffset="3665"
+            endLine="102"
+            endColumn="49"
+            endOffset="3679"/>
+    </incident>
+
+    <incident
+        id="AutoboxingStateCreation"
+        severity="informational"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`">
+        <fix-replace
+            description="Replace with mutableIntStateOf"
+            replacement="androidx.compose.runtime.mutableIntStateOf"
+            shortenNames="true"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+                startOffset="8125"
+                endOffset="8139"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="211"
+            column="36"
+            startOffset="8125"
+            endLine="211"
+            endColumn="50"
+            endOffset="8139"/>
+    </incident>
+
+    <incident
+        id="AutoboxingStateCreation"
+        severity="informational"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`">
+        <fix-replace
+            description="Replace with mutableIntStateOf"
+            replacement="androidx.compose.runtime.mutableIntStateOf"
+            shortenNames="true"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+                startOffset="8198"
+                endOffset="8212"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="212"
+            column="38"
+            startOffset="8198"
+            endLine="212"
+            endColumn="52"
+            endOffset="8212"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="34"
+            replacement="36"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="17"
+            column="9"
+            startOffset="287"
+            endLine="17"
+            endColumn="21"
+            endOffset="299"/>
+    </incident>
+
+    <incident
+        id="KaptUsageInsteadOfKsp"
+        severity="warning"
+        message="This library supports using KSP instead of kapt, which greatly improves performance. Learn more: https://developer.android.com/studio/build/migrate-to-ksp">
+        <show-url
+            description="Learn about how to enable KSP and use the KSP processor for this dependency instead"
+            url="https://developer.android.com/studio/build/migrate-to-ksp"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="68"
+            column="5"
+            startOffset="1755"
+            endLine="68"
+            endColumn="45"
+            endOffset="1795"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.9.23 is available: 2.2.0">
+        <fix-replace
+            description="Change to 2.2.0"
+            family="Update versions"
+            oldString="1.9.23"
+            replacement="2.2.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="56"
+            column="20"
+            startOffset="1135"
+            endLine="56"
+            endColumn="63"
+            endOffset="1178"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.13.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="58"
+            column="20"
+            startOffset="1199"
+            endLine="58"
+            endColumn="51"
+            endOffset="1230"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose:compose-bom than 2023.08.00 is available: 2024.03.00">
+        <fix-replace
+            description="Change to 2024.03.00"
+            family="Update versions"
+            oldString="2023.08.00"
+            replacement="2024.03.00"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="75"
+            column="31"
+            startOffset="2193"
+            endLine="75"
+            endColumn="82"
+            endOffset="2244"/>
+    </incident>
+
+</incidents>

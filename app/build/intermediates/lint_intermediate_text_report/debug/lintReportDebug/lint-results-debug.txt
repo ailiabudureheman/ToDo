@@ -1,0 +1,401 @@
+E:\ToDo\app\src\main\java\com\example\todo\data\NotificationService.kt:55: Error: Missing permissions required by NotificationManagerCompat.notify: android.permission.POST_NOTIFICATIONS [MissingPermission]
+            notify(NOTIFICATION_ID, notification)
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "MissingPermission":
+   This check scans through your code and libraries and looks at the APIs
+   being used, and checks this against the set of permissions required to
+   access those APIs. If the code using those APIs is called at runtime, then
+   the program will crash.
+
+   Furthermore, for permissions that are revocable (with targetSdkVersion 23),
+   client code must also be prepared to handle the calls throwing an exception
+   if the user rejects the request for permission at runtime.
+
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\CompletedTasksScreen.kt:154: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+                                        updatedAt = java.time.LocalDateTime.now()
+                                                                            ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\CompletedTasksScreen.kt:184: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+                                        updatedAt = java.time.LocalDateTime.now()
+                                                                            ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:23: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#now [NewApi]
+    val selectedDate = remember { mutableStateOf(value?.toLocalDate() ?: LocalDate.now()) }
+                                                                                   ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:23: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#toLocalDate [NewApi]
+    val selectedDate = remember { mutableStateOf(value?.toLocalDate() ?: LocalDate.now()) }
+                                                        ~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:24: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#toLocalTime [NewApi]
+    val selectedTime = remember { mutableStateOf(value?.toLocalTime() ?: LocalTime.now().withSecond(0)) }
+                                                        ~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:24: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalTime#now [NewApi]
+    val selectedTime = remember { mutableStateOf(value?.toLocalTime() ?: LocalTime.now().withSecond(0)) }
+                                                                                   ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:24: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalTime#withSecond [NewApi]
+    val selectedTime = remember { mutableStateOf(value?.toLocalTime() ?: LocalTime.now().withSecond(0)) }
+                                                                                         ~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:28: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.format.DateTimeFormatter#ofPattern [NewApi]
+    val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
+                                          ~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:29: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.format.DateTimeFormatter#ofPattern [NewApi]
+    val timeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+                                          ~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:41: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#format [NewApi]
+                Text(text = selectedDate.value.format(dateFormatter))
+                                               ~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:50: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalTime#format [NewApi]
+                Text(text = selectedTime.value.format(timeFormatter))
+                                               ~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:81: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#of [NewApi]
+    val dateTime = LocalDateTime.of(date, time)
+                                 ~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:91: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#getYear [NewApi]
+    val currentYear = selectedDate.year
+                                   ~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:92: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#getMonthValue [NewApi]
+    val currentMonth = selectedDate.monthValue
+                                    ~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:93: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#getDayOfMonth [NewApi]
+    val currentDay = selectedDate.dayOfMonth
+                                  ~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:97: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#lengthOfMonth [NewApi]
+    val daysInMonth = LocalDate.of(currentYear, currentMonth, 1).lengthOfMonth()
+                                                                 ~~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:97: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#of [NewApi]
+    val daysInMonth = LocalDate.of(currentYear, currentMonth, 1).lengthOfMonth()
+                                ~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:105: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#lengthOfMonth [NewApi]
+        val newDaysInMonth = LocalDate.of(selectedYear, selectedMonth, 1).lengthOfMonth()
+                                                                          ~~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:105: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#of [NewApi]
+        val newDaysInMonth = LocalDate.of(selectedYear, selectedMonth, 1).lengthOfMonth()
+                                       ~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:165: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#lengthOfMonth [NewApi]
+                    val daysInMonth = LocalDate.of(selectedYear, selectedMonth, 1).lengthOfMonth()
+                                                                                   ~~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:165: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#of [NewApi]
+                    val daysInMonth = LocalDate.of(selectedYear, selectedMonth, 1).lengthOfMonth()
+                                                ~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:192: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#of [NewApi]
+                onDateSelected(LocalDate.of(selectedYear, selectedMonth, selectedDay))
+                                         ~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:211: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalTime#getHour [NewApi]
+    var selectedHour by remember { mutableStateOf(selectedTime.hour) }
+                                                               ~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:212: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalTime#getMinute [NewApi]
+    var selectedMinute by remember { mutableStateOf(selectedTime.minute) }
+                                                                 ~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:279: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalTime#of [NewApi]
+                onTimeSelected(LocalTime.of(selectedHour, selectedMinute, 0))
+                                         ~~
+E:\ToDo\app\src\main\java\com\example\todo\data\LocalDateTimeConverter.kt:9: Error: Field requires API level 26, or core library desugaring (current min is 24): java.time.format.DateTimeFormatter#ISO_LOCAL_DATE_TIME [NewApi]
+    private val formatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\LocalDateTimeConverter.kt:13: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#format [NewApi]
+        return value?.format(formatter)
+                      ~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\LocalDateTimeConverter.kt:19: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#parse [NewApi]
+            LocalDateTime.parse(it, formatter)
+                          ~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\NotificationService.kt:60: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+        val now = LocalDateTime.now()
+                                ~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\NotificationService.kt:64: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.Duration#between [NewApi]
+                val hoursUntilDue = java.time.Duration.between(now, task.dueDate).toHours()
+                                                       ~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\NotificationService.kt:64: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.Duration#toHours [NewApi]
+                val hoursUntilDue = java.time.Duration.between(now, task.dueDate).toHours()
+                                                                                  ~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\NotificationService.kt:64: Error: Implicit cast from LocalDateTime to Temporal requires API level 26, or core library desugaring (current min is 24) [NewApi]
+                val hoursUntilDue = java.time.Duration.between(now, task.dueDate).toHours()
+                                                               ~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\NotificationService.kt:64: Error: Implicit cast from LocalDateTime to Temporal requires API level 26, or core library desugaring (current min is 24) [NewApi]
+                val hoursUntilDue = java.time.Duration.between(now, task.dueDate).toHours()
+                                                                    ~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\PendingTasksScreen.kt:172: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+                                        updatedAt = java.time.LocalDateTime.now()
+                                                                            ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\SearchScreen.kt:211: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+                                            updatedAt = java.time.LocalDateTime.now()
+                                                                                ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\StatsScreen.kt:286: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.format.DateTimeFormatter#ofPattern [NewApi]
+    val formatter = DateTimeFormatter.ofPattern("MM/dd")
+                                      ~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\StatsScreen.kt:289: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#minusDays [NewApi]
+        val date = LocalDate.now().minusDays(i.toLong())
+                                   ~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\StatsScreen.kt:289: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#now [NewApi]
+        val date = LocalDate.now().minusDays(i.toLong())
+                             ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\StatsScreen.kt:291: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#toLocalDate [NewApi]
+            val taskDate = task.createdAt.toLocalDate()
+                                          ~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\StatsScreen.kt:292: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#isEqual [NewApi]
+            taskDate.isEqual(date)
+                     ~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\StatsScreen.kt:292: Error: Implicit cast from LocalDate to ChronoLocalDate requires API level 26, or core library desugaring (current min is 24) [NewApi]
+            taskDate.isEqual(date)
+                             ~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\screens\StatsScreen.kt:296: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDate#format [NewApi]
+        last7DaysLabels.add(date.format(formatter))
+                                 ~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\Task.kt:17: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+    val createdAt: LocalDateTime = LocalDateTime.now(),
+                                                 ~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\Task.kt:17: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+    val createdAt: LocalDateTime = LocalDateTime.now(),
+                                                 ~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\Task.kt:18: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+    val updatedAt: LocalDateTime = LocalDateTime.now()
+                                                 ~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\Task.kt:18: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+    val updatedAt: LocalDateTime = LocalDateTime.now()
+                                                 ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\TaskDialog.kt:40: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.format.DateTimeFormatter#ofPattern [NewApi]
+    val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+                                          ~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\TaskDialog.kt:154: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+                                createdAt = LocalDateTime.now(),
+                                                          ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\TaskDialog.kt:155: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+                                updatedAt = LocalDateTime.now()
+                                                          ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\TaskDialog.kt:162: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+                                updatedAt = LocalDateTime.now()
+                                                          ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\TaskItem.kt:68: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.format.DateTimeFormatter#ofPattern [NewApi]
+    val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+                                          ~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\TaskItem.kt:120: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#format [NewApi]
+                        text = "截止时间: ${task.dueDate.format(dateFormatter)}",
+                                                     ~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\TaskItem.kt:125: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#isBefore [NewApi]
+                        } else if (task.dueDate.isBefore(java.time.LocalDateTime.now())) {
+                                                ~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\TaskItem.kt:125: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#now [NewApi]
+                        } else if (task.dueDate.isBefore(java.time.LocalDateTime.now())) {
+                                                                                 ~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\TaskItem.kt:125: Error: Implicit cast from LocalDateTime to ChronoLocalDateTime requires API level 26, or core library desugaring (current min is 24) [NewApi]
+                        } else if (task.dueDate.isBefore(java.time.LocalDateTime.now())) {
+                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\TypeConverters.kt:8: Error: Field requires API level 26, or core library desugaring (current min is 24): java.time.format.DateTimeFormatter#ISO_LOCAL_DATE_TIME [NewApi]
+    private val formatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\TypeConverters.kt:12: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#format [NewApi]
+        return value?.format(formatter)
+                      ~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\data\TypeConverters.kt:18: Error: Call requires API level 26, or core library desugaring (current min is 24): java.time.LocalDateTime#parse [NewApi]
+            LocalDateTime.parse(it, formatter)
+                          ~~~~~
+
+   Explanation for issues of type "NewApi":
+   This check scans through all the Android API calls in the application and
+   warns about any calls that are not available on all versions targeted by
+   this application (according to its minimum SDK attribute in the manifest).
+
+   If you really want to use this API and don't need to support older devices
+   just set the minSdkVersion in your build.gradle or AndroidManifest.xml
+   files.
+
+   If your code is deliberately accessing newer APIs, and you have ensured
+   (e.g. with conditional execution) that this code will only ever be called
+   on a supported platform, then you can annotate your class or method with
+   the @TargetApi annotation specifying the local minimum SDK to apply, such
+   as @TargetApi(11), such that this check considers 11 rather than your
+   manifest file's minimum SDK as the required API level.
+
+   If you are deliberately setting android: attributes in style definitions,
+   make sure you place this in a values-vNN folder in order to avoid running
+   into runtime conflicts on certain devices where manufacturers have added
+   custom attributes whose ids conflict with the new ones on later platforms.
+
+   Similarly, you can use tools:targetApi="11" in an XML file to indicate that
+   the element will only be inflated in an adequate context.
+
+E:\ToDo\app\src\main\java\com\example\todo\data\NotificationService.kt:55: Error: When targeting Android 13 or higher, posting a permission requires holding the POST_NOTIFICATIONS permission [NotificationPermission]
+            notify(NOTIFICATION_ID, notification)
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NotificationPermission":
+   When targeting Android 13 and higher, posting permissions requires holding
+   the runtime permission android.permission.POST_NOTIFICATIONS.
+
+E:\ToDo\app\build.gradle:17: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk 34
+        ~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+E:\ToDo\app\src\main\AndroidManifest.xml:18: Warning: Redundant label can be removed [RedundantLabel]
+            android:label="@string/app_name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RedundantLabel":
+   When an activity does not have a label attribute, it will use the one from
+   the application tag. Since the application has already specified the same
+   label, the label on this activity can be omitted.
+
+E:\ToDo\app\build.gradle:56: Warning: A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.9.23 is available: 2.2.0 [GradleDependency]
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.23'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\build.gradle:58: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.13.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.12.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\build.gradle:75: Warning: A newer version of androidx.compose:compose-bom than 2023.08.00 is available: 2024.03.00 [GradleDependency]
+    androidTestImplementation platform('androidx.compose:compose-bom:2023.08.00')
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+E:\ToDo\app\src\main\res\values\themes.xml:22: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+                                            ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+E:\ToDo\app\build.gradle:68: Warning: This library supports using KSP instead of kapt, which greatly improves performance. Learn more: https://developer.android.com/studio/build/migrate-to-ksp [KaptUsageInsteadOfKsp]
+    kapt 'androidx.room:room-compiler:2.6.1'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "KaptUsageInsteadOfKsp":
+   KSP is a more efficient replacement for kapt. For libraries that support
+   both, KSP should be used to improve build times.
+
+   https://developer.android.com/studio/build/migrate-to-ksp
+
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:100: Information: Prefer mutableIntStateOf instead of mutableStateOf [AutoboxingStateCreation from androidx.compose.runtime]
+    var selectedYear by remember { mutableStateOf(currentYear) }
+                                   ~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:101: Information: Prefer mutableIntStateOf instead of mutableStateOf [AutoboxingStateCreation from androidx.compose.runtime]
+    var selectedMonth by remember { mutableStateOf(currentMonth) }
+                                    ~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:102: Information: Prefer mutableIntStateOf instead of mutableStateOf [AutoboxingStateCreation from androidx.compose.runtime]
+    var selectedDay by remember { mutableStateOf(currentDay) }
+                                  ~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:211: Information: Prefer mutableIntStateOf instead of mutableStateOf [AutoboxingStateCreation from androidx.compose.runtime]
+    var selectedHour by remember { mutableStateOf(selectedTime.hour) }
+                                   ~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\java\com\example\todo\ui\components\DateTimePicker.kt:212: Information: Prefer mutableIntStateOf instead of mutableStateOf [AutoboxingStateCreation from androidx.compose.runtime]
+    var selectedMinute by remember { mutableStateOf(selectedTime.minute) }
+                                     ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "AutoboxingStateCreation":
+   Calling mutableStateOf<T>() when T is either backed by a primitive type on
+   the JVM or is a value class results in a state implementation that requires
+   all state values to be boxed. This usually causes an additional allocation
+   for each state write, and adds some additional work to auto-unbox values
+   when reading the value of the state. Instead, prefer to use a specialized
+   primitive state implementation for Int, Long, Float, and Double when the
+   state does not need to track null values and does not override the default
+   SnapshotMutationPolicy. See mutableIntStateOf(), mutableLongStateOf(),
+   mutableFloatStateOf(), and mutableDoubleStateOf() for more information.
+
+   Vendor: Jetpack Compose
+   Identifier: androidx.compose.runtime
+   Feedback: https://issuetracker.google.com/issues/new?component=612128
+
+E:\ToDo\app\src\main\res\values\colors.xml:18: Warning: The resource R.color.on_primary appears to be unused [UnusedResources]
+    <color name="on_primary">#FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\res\values\colors.xml:19: Warning: The resource R.color.on_secondary appears to be unused [UnusedResources]
+    <color name="on_secondary">#FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\res\values\colors.xml:27: Warning: The resource R.color.gray_light appears to be unused [UnusedResources]
+    <color name="gray_light">#E0E0E0</color>
+           ~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\res\values\colors.xml:28: Warning: The resource R.color.gray appears to be unused [UnusedResources]
+    <color name="gray">#9E9E9E</color>
+           ~~~~~~~~~~~
+E:\ToDo\app\src\main\res\values\colors.xml:29: Warning: The resource R.color.gray_dark appears to be unused [UnusedResources]
+    <color name="gray_dark">#616161</color>
+           ~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\res\values\strings.xml:6: Warning: The resource R.string.delete_task appears to be unused [UnusedResources]
+    <string name="delete_task">删除任务</string>
+            ~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\res\values\strings.xml:14: Warning: The resource R.string.confirm_delete appears to be unused [UnusedResources]
+    <string name="confirm_delete">确定删除此任务吗？</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\res\values\strings.xml:42: Warning: The resource R.string.restore_task appears to be unused [UnusedResources]
+    <string name="restore_task">恢复任务</string>
+            ~~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\res\values\strings.xml:43: Warning: The resource R.string.delete_permanently appears to be unused [UnusedResources]
+    <string name="delete_permanently">永久删除</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\res\values\strings.xml:45: Warning: The resource R.string.empty_trash_action appears to be unused [UnusedResources]
+    <string name="empty_trash_action">清空废纸桶</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+E:\ToDo\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml:4: Warning: This namespace declaration is redundant [RedundantNamespace]
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\ToDo\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml:4: Warning: This namespace declaration is redundant [RedundantNamespace]
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RedundantNamespace":
+   In Android XML documents, only specify the namespace on the root/document
+   element. Namespace declarations elsewhere in the document are typically
+   accidental leftovers from copy/pasting XML from other files or
+   documentation.
+
+E:\ToDo\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml:1: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+E:\ToDo\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml:1: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+60 errors, 21 warnings

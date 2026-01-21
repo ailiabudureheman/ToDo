@@ -1,0 +1,1978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.5.0" type="conditional_incidents">
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 31">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+                startOffset="555"
+                endOffset="575"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="14"
+            column="9"
+            startOffset="555"
+            endLine="14"
+            endColumn="29"
+            endOffset="575"/>
+        <map>
+            <condition minGE="ffffffffc0000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 21">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/themes.xml"
+                startOffset="1164"
+                endOffset="1183"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/themes.xml"
+            line="22"
+            column="45"
+            startOffset="1164"
+            endLine="22"
+            endColumn="64"
+            endOffset="1183"/>
+        <map>
+            <condition minGE="fffffffffff00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/LocalDateTimeConverter.kt"
+            line="9"
+            column="29"
+            startOffset="200"
+            endLine="9"
+            endColumn="66"
+            endOffset="237"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.format.DateTimeFormatter"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="ISO_LOCAL_DATE_TIME"/>
+            <entry
+                name="message"
+                string="Field requires API level 26 (current min is %1$s): `java.time.format.DateTimeFormatter#ISO_LOCAL_DATE_TIME`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/LocalDateTimeConverter.kt"
+            line="13"
+            column="23"
+            startOffset="344"
+            endLine="13"
+            endColumn="29"
+            endOffset="350"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="format"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#format`"/>
+            <entry
+                name="desc"
+                string="(Ljava.time.format.DateTimeFormatter;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/LocalDateTimeConverter.kt"
+            line="19"
+            column="27"
+            startOffset="504"
+            endLine="19"
+            endColumn="32"
+            endOffset="509"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="parse"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#parse`"/>
+            <entry
+                name="desc"
+                string="(Ljava.lang.CharSequence;Ljava.time.format.DateTimeFormatter;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NotificationPermission"
+        severity="error"
+        message="When targeting Android 13 or higher, posting a permission requires holding the `POST_NOTIFICATIONS` permission">
+        <fix-data missing="android.permission.POST_NOTIFICATIONS"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/NotificationService.kt"
+            line="55"
+            column="13"
+            startOffset="2173"
+            endLine="55"
+            endColumn="50"
+            endOffset="2210"/>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.POST_NOTIFICATIONS" message="Missing permissions required by NotificationManagerCompat.notify: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/NotificationService.kt"
+            line="55"
+            column="13"
+            startOffset="2173"
+            endLine="55"
+            endColumn="50"
+            endOffset="2210"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.POST_NOTIFICATIONS"/>
+            <entry
+                name="message"
+                string="Missing permissions required by NotificationManagerCompat.notify: %1$s"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/NotificationService.kt"
+            line="60"
+            column="33"
+            startOffset="2316"
+            endLine="60"
+            endColumn="36"
+            endOffset="2319"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/NotificationService.kt"
+            line="64"
+            column="64"
+            startOffset="2506"
+            endLine="64"
+            endColumn="67"
+            endOffset="2509"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="message"
+                string="Implicit cast from `LocalDateTime` to `Temporal` requires API level 26 (current min is %1$s)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/NotificationService.kt"
+            line="64"
+            column="69"
+            startOffset="2511"
+            endLine="64"
+            endColumn="81"
+            endOffset="2523"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="message"
+                string="Implicit cast from `LocalDateTime` to `Temporal` requires API level 26 (current min is %1$s)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/NotificationService.kt"
+            line="64"
+            column="56"
+            startOffset="2498"
+            endLine="64"
+            endColumn="63"
+            endOffset="2505"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.Duration"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="between"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.Duration#between`"/>
+            <entry
+                name="desc"
+                string="(Ljava.time.temporal.Temporal;Ljava.time.temporal.Temporal;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/NotificationService.kt"
+            line="64"
+            column="83"
+            startOffset="2525"
+            endLine="64"
+            endColumn="90"
+            endOffset="2532"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.Duration"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="toHours"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.Duration#toHours`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/Task.kt"
+            line="17"
+            column="50"
+            startOffset="448"
+            endLine="17"
+            endColumn="53"
+            endOffset="451"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/Task.kt"
+            line="18"
+            column="50"
+            startOffset="504"
+            endLine="18"
+            endColumn="53"
+            endOffset="507"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/Task.kt"
+            line="17"
+            column="50"
+            startOffset="448"
+            endLine="17"
+            endColumn="53"
+            endOffset="451"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/Task.kt"
+            line="18"
+            column="50"
+            startOffset="504"
+            endLine="18"
+            endColumn="53"
+            endOffset="507"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/TypeConverters.kt"
+            line="8"
+            column="29"
+            startOffset="203"
+            endLine="8"
+            endColumn="66"
+            endOffset="240"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.format.DateTimeFormatter"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="ISO_LOCAL_DATE_TIME"/>
+            <entry
+                name="message"
+                string="Field requires API level 26 (current min is %1$s): `java.time.format.DateTimeFormatter#ISO_LOCAL_DATE_TIME`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/TypeConverters.kt"
+            line="12"
+            column="23"
+            startOffset="347"
+            endLine="12"
+            endColumn="29"
+            endOffset="353"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="format"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#format`"/>
+            <entry
+                name="desc"
+                string="(Ljava.time.format.DateTimeFormatter;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/data/TypeConverters.kt"
+            line="18"
+            column="27"
+            startOffset="507"
+            endLine="18"
+            endColumn="32"
+            endOffset="512"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="parse"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#parse`"/>
+            <entry
+                name="desc"
+                string="(Ljava.lang.CharSequence;Ljava.time.format.DateTimeFormatter;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="23"
+            column="57"
+            startOffset="735"
+            endLine="23"
+            endColumn="68"
+            endOffset="746"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="toLocalDate"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#toLocalDate`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="23"
+            column="84"
+            startOffset="762"
+            endLine="23"
+            endColumn="87"
+            endOffset="765"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="24"
+            column="57"
+            startOffset="827"
+            endLine="24"
+            endColumn="68"
+            endOffset="838"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="toLocalTime"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#toLocalTime`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="24"
+            column="84"
+            startOffset="854"
+            endLine="24"
+            endColumn="87"
+            endOffset="857"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="24"
+            column="90"
+            startOffset="860"
+            endLine="24"
+            endColumn="100"
+            endOffset="870"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="withSecond"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalTime#withSecond`"/>
+            <entry
+                name="desc"
+                string="(I)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="28"
+            column="43"
+            startOffset="1044"
+            endLine="28"
+            endColumn="52"
+            endOffset="1053"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.format.DateTimeFormatter"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="ofPattern"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.format.DateTimeFormatter#ofPattern`"/>
+            <entry
+                name="desc"
+                string="(Ljava.lang.String;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="29"
+            column="43"
+            startOffset="1110"
+            endLine="29"
+            endColumn="52"
+            endOffset="1119"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.format.DateTimeFormatter"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="ofPattern"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.format.DateTimeFormatter#ofPattern`"/>
+            <entry
+                name="desc"
+                string="(Ljava.lang.String;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="41"
+            column="48"
+            startOffset="1551"
+            endLine="41"
+            endColumn="54"
+            endOffset="1557"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="format"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#format`"/>
+            <entry
+                name="desc"
+                string="(Ljava.time.format.DateTimeFormatter;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="50"
+            column="48"
+            startOffset="1855"
+            endLine="50"
+            endColumn="54"
+            endOffset="1861"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="format"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalTime#format`"/>
+            <entry
+                name="desc"
+                string="(Ljava.time.format.DateTimeFormatter;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="81"
+            column="34"
+            startOffset="2962"
+            endLine="81"
+            endColumn="36"
+            endOffset="2964"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="of"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#of`"/>
+            <entry
+                name="desc"
+                string="(Ljava.time.LocalDate;Ljava.time.LocalTime;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="91"
+            column="36"
+            startOffset="3176"
+            endLine="91"
+            endColumn="40"
+            endOffset="3180"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="getYear"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#getYear`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="92"
+            column="37"
+            startOffset="3217"
+            endLine="92"
+            endColumn="47"
+            endOffset="3227"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="getMonthValue"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#getMonthValue`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="93"
+            column="35"
+            startOffset="3262"
+            endLine="93"
+            endColumn="45"
+            endOffset="3272"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="getDayOfMonth"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#getDayOfMonth`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="97"
+            column="33"
+            startOffset="3404"
+            endLine="97"
+            endColumn="35"
+            endOffset="3406"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="of"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#of`"/>
+            <entry
+                name="desc"
+                string="(III)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="97"
+            column="66"
+            startOffset="3437"
+            endLine="97"
+            endColumn="79"
+            endOffset="3450"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="lengthOfMonth"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#lengthOfMonth`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="105"
+            column="40"
+            startOffset="3788"
+            endLine="105"
+            endColumn="42"
+            endOffset="3790"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="of"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#of`"/>
+            <entry
+                name="desc"
+                string="(III)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="105"
+            column="75"
+            startOffset="3823"
+            endLine="105"
+            endColumn="88"
+            endOffset="3836"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="lengthOfMonth"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#lengthOfMonth`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="165"
+            column="49"
+            startOffset="6506"
+            endLine="165"
+            endColumn="51"
+            endOffset="6508"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="of"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#of`"/>
+            <entry
+                name="desc"
+                string="(III)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="165"
+            column="84"
+            startOffset="6541"
+            endLine="165"
+            endColumn="97"
+            endOffset="6554"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="lengthOfMonth"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#lengthOfMonth`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="192"
+            column="42"
+            startOffset="7701"
+            endLine="192"
+            endColumn="44"
+            endOffset="7703"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="of"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#of`"/>
+            <entry
+                name="desc"
+                string="(III)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="211"
+            column="64"
+            startOffset="8153"
+            endLine="211"
+            endColumn="68"
+            endOffset="8157"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="getHour"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalTime#getHour`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="212"
+            column="66"
+            startOffset="8226"
+            endLine="212"
+            endColumn="72"
+            endOffset="8232"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="getMinute"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalTime#getMinute`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/DateTimePicker.kt"
+            line="279"
+            column="42"
+            startOffset="11251"
+            endLine="279"
+            endColumn="44"
+            endOffset="11253"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="of"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalTime#of`"/>
+            <entry
+                name="desc"
+                string="(III)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/TaskDialog.kt"
+            line="40"
+            column="43"
+            startOffset="1533"
+            endLine="40"
+            endColumn="52"
+            endOffset="1542"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.format.DateTimeFormatter"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="ofPattern"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.format.DateTimeFormatter#ofPattern`"/>
+            <entry
+                name="desc"
+                string="(Ljava.lang.String;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/TaskDialog.kt"
+            line="154"
+            column="59"
+            startOffset="6126"
+            endLine="154"
+            endColumn="62"
+            endOffset="6129"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/TaskDialog.kt"
+            line="155"
+            column="59"
+            startOffset="6191"
+            endLine="155"
+            endColumn="62"
+            endOffset="6194"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/TaskDialog.kt"
+            line="162"
+            column="59"
+            startOffset="6514"
+            endLine="162"
+            endColumn="62"
+            endOffset="6517"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/TaskItem.kt"
+            line="68"
+            column="43"
+            startOffset="2442"
+            endLine="68"
+            endColumn="52"
+            endOffset="2451"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.format.DateTimeFormatter"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="ofPattern"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.format.DateTimeFormatter#ofPattern`"/>
+            <entry
+                name="desc"
+                string="(Ljava.lang.String;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/TaskItem.kt"
+            line="120"
+            column="54"
+            startOffset="4575"
+            endLine="120"
+            endColumn="60"
+            endOffset="4581"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="format"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#format`"/>
+            <entry
+                name="desc"
+                string="(Ljava.time.format.DateTimeFormatter;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/TaskItem.kt"
+            line="125"
+            column="58"
+            startOffset="4982"
+            endLine="125"
+            endColumn="87"
+            endOffset="5011"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="message"
+                string="Implicit cast from `LocalDateTime` to `ChronoLocalDateTime` requires API level 26 (current min is %1$s)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/TaskItem.kt"
+            line="125"
+            column="49"
+            startOffset="4973"
+            endLine="125"
+            endColumn="57"
+            endOffset="4981"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="isBefore"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#isBefore`"/>
+            <entry
+                name="desc"
+                string="(Ljava.time.chrono.ChronoLocalDateTime;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/components/TaskItem.kt"
+            line="125"
+            column="82"
+            startOffset="5006"
+            endLine="125"
+            endColumn="85"
+            endOffset="5009"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/CompletedTasksScreen.kt"
+            line="154"
+            column="77"
+            startOffset="6112"
+            endLine="154"
+            endColumn="80"
+            endOffset="6115"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/CompletedTasksScreen.kt"
+            line="184"
+            column="77"
+            startOffset="7871"
+            endLine="184"
+            endColumn="80"
+            endOffset="7874"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/PendingTasksScreen.kt"
+            line="172"
+            column="77"
+            startOffset="7115"
+            endLine="172"
+            endColumn="80"
+            endOffset="7118"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/SearchScreen.kt"
+            line="211"
+            column="81"
+            startOffset="9233"
+            endLine="211"
+            endColumn="84"
+            endOffset="9236"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/StatsScreen.kt"
+            line="286"
+            column="39"
+            startOffset="12729"
+            endLine="286"
+            endColumn="48"
+            endOffset="12738"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.format.DateTimeFormatter"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="ofPattern"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.format.DateTimeFormatter#ofPattern`"/>
+            <entry
+                name="desc"
+                string="(Ljava.lang.String;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/StatsScreen.kt"
+            line="289"
+            column="30"
+            startOffset="12810"
+            endLine="289"
+            endColumn="33"
+            endOffset="12813"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="now"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#now`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/StatsScreen.kt"
+            line="289"
+            column="36"
+            startOffset="12816"
+            endLine="289"
+            endColumn="45"
+            endOffset="12825"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="minusDays"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#minusDays`"/>
+            <entry
+                name="desc"
+                string="(J)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/StatsScreen.kt"
+            line="291"
+            column="43"
+            startOffset="12925"
+            endLine="291"
+            endColumn="54"
+            endOffset="12936"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDateTime"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="toLocalDate"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDateTime#toLocalDate`"/>
+            <entry
+                name="desc"
+                string="()"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/StatsScreen.kt"
+            line="292"
+            column="30"
+            startOffset="12968"
+            endLine="292"
+            endColumn="34"
+            endOffset="12972"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="message"
+                string="Implicit cast from `LocalDate` to `ChronoLocalDate` requires API level 26 (current min is %1$s)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/StatsScreen.kt"
+            line="292"
+            column="22"
+            startOffset="12960"
+            endLine="292"
+            endColumn="29"
+            endOffset="12967"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="isEqual"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#isEqual`"/>
+            <entry
+                name="desc"
+                string="(Ljava.time.chrono.ChronoLocalDate;)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="ffffffffff800000" requiresApi="fffffffffe000000"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/todo/ui/screens/StatsScreen.kt"
+            line="296"
+            column="34"
+            startOffset="13062"
+            endLine="296"
+            endColumn="40"
+            endOffset="13068"/>
+        <map>
+            <entry
+                name="owner"
+                string="java.time.LocalDate"/>
+            <api-levels id="minSdk"
+                value="ffffffffff800000"/>
+            <api-levels id="requiresApi"
+                value="fffffffffe000000"/>
+            <entry
+                name="name"
+                string="format"/>
+            <entry
+                name="message"
+                string="Call requires API level 26 (current min is %1$s): `java.time.LocalDate#format`"/>
+            <entry
+                name="desc"
+                string="(Ljava.time.format.DateTimeFormatter;)"/>
+        </map>
+    </incident>
+
+</incidents>

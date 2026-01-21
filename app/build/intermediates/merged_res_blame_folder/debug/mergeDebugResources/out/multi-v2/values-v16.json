@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.todo.app-mergeDebugResources-59:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\艾力\\.gradle\\caches\\transforms-4\\a4300978c37a2a861c81fe7ea5793922\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}

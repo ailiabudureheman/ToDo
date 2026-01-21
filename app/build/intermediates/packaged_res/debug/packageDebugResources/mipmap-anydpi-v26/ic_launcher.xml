@@ -1,0 +1,31 @@
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/purple_500" />
+    <foreground>
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="108dp"
+            android:height="108dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+            <!-- 勾选框轮廓 -->
+            <path
+                android:pathData="M35,30 L65,30 L65,60 L35,60 Z"
+                android:fillColor="@android:color/transparent"
+                android:strokeColor="@android:color/white"
+                android:strokeWidth="4"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round" />
+            <!-- 对勾（辅助色pink_500） -->
+            <path
+                android:pathData="M40,45 L50,55 L65,40"
+                android:strokeColor="@color/pink_500"
+                android:strokeWidth="6"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:fillColor="@android:color/transparent" />
+            <!-- TODO文字 -->
+            <path
+                android:fillColor="@android:color/white"
+                android:pathData="M38,75 C38,72.790861 39.790861,71 42,71 L45,71 C47.209139,71 49,72.790861 49,75 C49,77.209139 47.209139,79 45,79 L42,79 C39.790861,79 38,77.209139 38,75 Z M52,71 L55,71 L55,79 L52,79 Z M58,71 L61,71 C63.209139,71 65,72.790861 65,75 C65,77.209139 63.209139,79 61,79 L58,79 Z" />
+        </vector>
+    </foreground>
+</adaptive-icon>

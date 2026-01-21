@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.5.0" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.example.todo.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="NotificationPermission">
+        <entry
+            name="source"
+            boolean="true"/>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.color.gray_dark"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="29"
+            column="12"
+            startOffset="847"
+            endLine="29"
+            endColumn="28"
+            endOffset="863"/>
+        <location id="R.string.delete_task"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="6"
+            column="13"
+            startOffset="194"
+            endLine="6"
+            endColumn="31"
+            endOffset="212"/>
+        <location id="R.color.on_primary"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="18"
+            column="12"
+            startOffset="502"
+            endLine="18"
+            endColumn="29"
+            endOffset="519"/>
+        <location id="R.string.empty_trash_action"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="45"
+            column="13"
+            startOffset="1738"
+            endLine="45"
+            endColumn="38"
+            endOffset="1763"/>
+        <location id="R.string.confirm_delete"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="14"
+            column="13"
+            startOffset="554"
+            endLine="14"
+            endColumn="34"
+            endOffset="575"/>
+        <location id="R.string.delete_permanently"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="43"
+            column="13"
+            startOffset="1628"
+            endLine="43"
+            endColumn="38"
+            endOffset="1653"/>
+        <location id="R.color.on_secondary"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="19"
+            column="12"
+            startOffset="547"
+            endLine="19"
+            endColumn="31"
+            endOffset="566"/>
+        <entry
+            name="model"
+            string="attr[colorPrimary(R)],color[purple_500(U),purple_700(U),pink_500(U),pink_700(U),background(U),surface(U),on_background(U),on_surface(U),on_primary(D),on_secondary(D),white(U),error(U),on_error(U),gray_light(D),gray(D),gray_dark(D)],mipmap[ic_launcher(U),ic_launcher_round(U)],string[app_name(U),add_task(U),edit_task(U),delete_task(D),task_title(U),task_description(U),save(U),cancel(U),empty_tasks(U),hint_title(U),hint_description(U),confirm_delete(D),yes(U),no(U),pending_tasks(U),completed_tasks(U),trash(U),search(U),stats(U),pending_tasks_title(U),completed_tasks_title(U),trash_title(U),search_title(U),stats_title(U),tasks_completed(U),tasks_pending(U),tasks_total(U),completion_rate(U),last_7_days(U),empty_stats(U),empty_trash(U),restore_task(D),delete_permanently(D),empty_trash_confirm(U),empty_trash_action(D),channel_name(U),channel_description(U),task_reminder(U)],style[Theme_ToDo(U),Theme_MaterialComponents_DayNight_DarkActionBar(R)],xml[data_extraction_rules(U),backup_rules(U)];11^1^2,12^1^2,39^3a^1^2^b^3^4^5^7^6^8^c^d^0;;;"/>
+        <location id="R.color.gray_light"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="27"
+            column="12"
+            startOffset="763"
+            endLine="27"
+            endColumn="29"
+            endOffset="780"/>
+        <location id="R.color.gray"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="28"
+            column="12"
+            startOffset="808"
+            endLine="28"
+            endColumn="23"
+            endOffset="819"/>
+        <location id="R.string.restore_task"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="42"
+            column="13"
+            startOffset="1582"
+            endLine="42"
+            endColumn="32"
+            endOffset="1601"/>
+    </map>
+
+</incidents>

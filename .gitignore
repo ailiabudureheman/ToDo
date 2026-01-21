@@ -1,0 +1,11 @@
+# 忽略 hprof 内存快照文件
+*.hprof
+# 忽略日志文件
+*.log
+# 忽略缓存/临时文件
+tmp/
+cache/
+# 忽略 IDE 配置文件（如IntelliJ/Eclipse）
+.idea/
+.classpath
+.project

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToDo 备忘录</string>
+    <string name="add_task">添加任务</string>
+    <string name="edit_task">编辑任务</string>
+    <string name="delete_task">删除任务</string>
+    <string name="task_title">任务标题</string>
+    <string name="task_description">任务描述</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="empty_tasks">暂无任务</string>
+    <string name="hint_title">输入任务标题</string>
+    <string name="hint_description">输入任务描述（可选）</string>
+    <string name="confirm_delete">确定删除此任务吗？</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    
+    <!-- Navigation labels -->
+    <string name="pending_tasks">待办</string>
+    <string name="completed_tasks">已完成</string>
+    <string name="trash">废纸桶</string>
+    <string name="search">搜索</string>
+    <string name="stats">统计</string>
+    
+    <!-- Screen titles -->
+    <string name="pending_tasks_title">待办任务</string>
+    <string name="completed_tasks_title">已完成任务</string>
+    <string name="trash_title">废纸桶</string>
+    <string name="search_title">搜索任务</string>
+    <string name="stats_title">任务统计</string>
+    
+    <!-- Stats screen -->
+    <string name="tasks_completed">已完成任务</string>
+    <string name="tasks_pending">待办任务</string>
+    <string name="tasks_total">总任务数</string>
+    <string name="completion_rate">完成率</string>
+    <string name="last_7_days">最近7天</string>
+    <string name="empty_stats">暂无统计数据</string>
+    
+    <!-- Trash screen -->
+    <string name="empty_trash">废纸桶为空</string>
+    <string name="restore_task">恢复任务</string>
+    <string name="delete_permanently">永久删除</string>
+    <string name="empty_trash_confirm">确定清空废纸桶吗？</string>
+    <string name="empty_trash_action">清空废纸桶</string>
+    
+    <!-- Notification -->
+    <string name="channel_name">任务提醒</string>
+    <string name="channel_description">任务到期提醒通知</string>
+    <string name="task_reminder">任务提醒</string>
+</resources>
